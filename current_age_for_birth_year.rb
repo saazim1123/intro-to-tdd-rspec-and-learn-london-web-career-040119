@@ -3,7 +3,7 @@
 
 
 def current_age_for_birth_year(year)
-  diff = Date.today - year
+  diff = Time.now - year
   age = (diff / 365.25).floor
   puts age.to_s
   
