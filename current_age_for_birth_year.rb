@@ -1,7 +1,14 @@
 
 
-I expect the method current_age_for_birth_year(1984) to return 19
+
 
 def current_age_for_birth_year(year)
-
+  diff = Date.today - year
+  age = (diff / 365.25).floor
+  puts age.to_s
+  
 end
+
+puts current_age_for_birth_year(1984)
+
+
